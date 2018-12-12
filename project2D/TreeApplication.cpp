@@ -56,7 +56,7 @@ void TreeApplication::draw()
 
 	m_binaryTree.draw(m_2dRenderer, g_systemFont, m_selectedNode);
 
-	m_2dRenderer->drawText(g_systemFont, "Press ESC to quit", 0, 0 + 1);
+	m_2dRenderer->drawText(g_systemFont, "Press ESC to quit", 0, 0);
 
 	m_2dRenderer->end();
 }
