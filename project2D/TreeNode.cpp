@@ -21,12 +21,12 @@ void TreeNode::draw(aie::Renderer2D * renderer, int x, int y, aie::Font* g_syste
 
 	sprintf(buffer, "%d", m_value);
 
-	renderer->setRenderColour(.22f, 1.f, .08f);
+	renderer->setRenderColour(1, 1, 0);
 	renderer->drawCircle(x, y, 30);
 
 	if (selected == true)
 	{
-		renderer->setRenderColour(1, 1, 1);
+		renderer->setRenderColour(.5, .5, 0);
 	}
 
 	else
@@ -35,6 +35,6 @@ void TreeNode::draw(aie::Renderer2D * renderer, int x, int y, aie::Font* g_syste
 	}
 
 	renderer->drawCircle(x, y, 28);
-	renderer->setRenderColour(1, 0, 1);
+	renderer->setRenderColour(1, 1, 1);
 	renderer->drawText(g_systemFont, buffer, x - 10, y - 10);
 }
